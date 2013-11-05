@@ -1,5 +1,7 @@
 # Highlight.js for rails 4.0
 
+** UNTESTED
+
 This is a minor update to chloerei/highlight_js-rails which I have
 forked because :
 
