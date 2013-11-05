@@ -192,4 +192,4 @@ hljs.LANGUAGES['ruby'] = function(hljs) {
     keywords: RUBY_KEYWORDS,
     contains: RUBY_DEFAULT_CONTAINS
   };
-}(hljs);(hljs);
+}(hljs);
