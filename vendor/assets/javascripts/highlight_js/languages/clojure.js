@@ -4,7 +4,7 @@ Description: Clojure syntax (based on lisp.js)
 Author: mfornos
 */
 
-hljs.LANGUAGES['clojure'] = function(hljs) {
+function(hljs) {
   var keywords = {
     built_in:
       // Clojure keywords
@@ -73,11 +73,10 @@ hljs.LANGUAGES['clojure'] = function(hljs) {
   };
   var LIST = {
     className: 'list',
-    begin: '\\(', end: '\\)',
-    relevance: 0
+    begin: '\\(', end: '\\)'
   };
   var BODY = {
-    endsWithParent: true, excludeEnd: true,
+    endsWithParent: true,
     keywords: {literal: 'true false nil'},
     relevance: 0
   };
@@ -93,13 +92,10 @@ hljs.LANGUAGES['clojure'] = function(hljs) {
   COLLECTION.contains = [LIST, STRING, HINT, COMMENT, KEY, COLLECTION, NUMBER];
 
   return {
-    case_insensitive: true,
-    defaultMode: {
-      illegal: '\\S',
-      contains: [
-        COMMENT,
-        LIST
-      ]
-    }
+    illegal: '\\S',
+    contains: [
+      COMMENT,
+      LIST
+    ]
   }
-}(hljs);
+}
