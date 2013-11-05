@@ -3,11 +3,11 @@
 This is a minor update to chloerei/highlight_js-rails which I have
 forked because :
 
-1) I've nevered forked a repository before.
-2) it hadn't been updated in a year and was 3 versions behind
+1. I've nevered forked a repository before.
+2. it hadn't been updated in a year and was 3 versions behind
 highlight.js.
-3) I've yet to create a gem. Its about time I learned.
-4) It doesn't mention compatability with rails 4.0.
+3. I've yet to create a gem. Its about time I learned.
+4. It doesn't mention compatability with rails 4.0.
 
 ## Description
 
