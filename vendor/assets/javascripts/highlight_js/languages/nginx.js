@@ -4,7 +4,7 @@ Author: Peter Leonov <gojpeg@yandex.ru>
 Contributors: Ivan Sagalaev <maniac@softwaremaniacs.org>
 */
 
-function(hljs) {
+hljs.LANGUAGES['nginx'] = function(hljs) {
   var VARS = [
     {
       className: 'variable', begin: '\\$\\d+'
@@ -98,4 +98,4 @@ function(hljs) {
     ],
     illegal: '[^\\s\\}]'
   };
-}
+}(hljs);

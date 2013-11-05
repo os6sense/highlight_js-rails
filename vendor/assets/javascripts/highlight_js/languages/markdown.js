@@ -5,7 +5,7 @@ Author: John Crepezzi <john.crepezzi@gmail.com>
 Website: http://seejohncode.com/
 */
 
-function(hljs) {
+hljs.LANGUAGES['markdown'] = function(hljs) {
   return {
     contains: [
       // highlight headers
@@ -81,4 +81,4 @@ function(hljs) {
       }
     ]
   };
-}
+}(hljs);

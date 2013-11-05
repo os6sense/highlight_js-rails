@@ -3,7 +3,7 @@ Language: Axapta
 Author: Dmitri Roudakov <dmitri@roudakov.ru>
 */
 
-function(hljs) {
+hljs.LANGUAGES['axapta'] = function(hljs) {
   return {
     keywords: 'false int abstract private char boolean static null if for true ' +
       'while long throw finally protected final return void enum else ' +
@@ -41,4 +41,4 @@ function(hljs) {
       }
     ]
   };
-}
+}(hljs);

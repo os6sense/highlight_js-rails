@@ -2,7 +2,7 @@
 Language: SQL
 */
 
-function(hljs) {
+hljs.LANGUAGES['sql'] = function(hljs) {
   return {
     case_insensitive: true,
     contains: [
@@ -61,4 +61,4 @@ function(hljs) {
       }
     ]
   };
-}
+}(hljs);

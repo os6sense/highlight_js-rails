@@ -3,7 +3,7 @@ Language: Rust
 Author: Andrey Vlasovskikh <andrey.vlasovskikh@gmail.com>
 */
 
-function(hljs) {
+hljs.LANGUAGES['rust'] = function(hljs) {
   var TITLE = {
     className: 'title',
     begin: hljs.UNDERSCORE_IDENT_RE
@@ -52,4 +52,4 @@ function(hljs) {
       }
     ]
   };
-}
+}(hljs);

@@ -3,7 +3,7 @@ Language: R
 Author: Joe Cheng <joe@rstudio.org>
 */
 
-function(hljs) {
+hljs.LANGUAGES['r'] = function(hljs) {
   var IDENT_RE = '([a-zA-Z]|\\.[a-zA-Z.])[a-zA-Z0-9._]*';
 
   return {
@@ -77,4 +77,4 @@ function(hljs) {
       }
     ]
   };
-}
+}(hljs);

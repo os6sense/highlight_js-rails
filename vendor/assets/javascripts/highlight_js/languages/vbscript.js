@@ -4,7 +4,7 @@ Author: Nikita Ledyaev <lenikita@yandex.ru>
 Contributors: Michal Gabrukiewicz <mgabru@gmail.com>
 */
 
-function(hljs) {
+hljs.LANGUAGES['vbscript'] = function(hljs) {
   return {
     case_insensitive: true,
     keywords: {
@@ -37,4 +37,4 @@ function(hljs) {
       hljs.C_NUMBER_MODE
     ]
   };
-}
+}(hljs);

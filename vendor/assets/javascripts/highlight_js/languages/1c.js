@@ -4,7 +4,7 @@ Author: Yuri Ivanov <ivanov@supersoft.ru>
 Contributors: Sergey Baranov <segyrn@yandex.ru>
 */
 
-function(hljs){
+hljs.LANGUAGES['1c'] = function(hljs){
   var IDENT_RE_RU = '[a-zA-Zа-яА-Я][a-zA-Z0-9_а-яА-Я]*';
   var OneS_KEYWORDS = 'возврат дата для если и или иначе иначеесли исключение конецесли ' +
     'конецпопытки конецпроцедуры конецфункции конеццикла константа не перейти перем ' +
@@ -89,4 +89,4 @@ function(hljs){
       {className: 'date', begin: '\'\\d{2}\\.\\d{2}\\.(\\d{2}|\\d{4})\''}
     ]
   };
-}
+}(hljs);

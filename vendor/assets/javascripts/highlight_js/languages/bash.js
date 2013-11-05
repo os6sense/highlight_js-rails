@@ -4,7 +4,7 @@ Author: vah <vahtenberg@gmail.com>
 Contributrors: Benjamin Pannell <contact@sierrasoftworks.com>
 */
 
-function(hljs) {
+hljs.LANGUAGES['bash'] = function(hljs) {
   var VAR1 = {
     className: 'variable', begin: /\$[\w\d#@][\w\d_]*/
   };
@@ -67,4 +67,4 @@ function(hljs) {
       VAR2
     ]
   };
-}
+}(hljs);

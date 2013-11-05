@@ -2,7 +2,7 @@
 Language: CSS
 */
 
-function(hljs) {
+hljs.LANGUAGES['css'] = function(hljs) {
   var IDENT_RE = '[a-zA-Z-][a-zA-Z0-9_-]*';
   var FUNCTION = {
     className: 'function',
@@ -102,4 +102,4 @@ function(hljs) {
       }
     ]
   };
-}
+}(hljs);

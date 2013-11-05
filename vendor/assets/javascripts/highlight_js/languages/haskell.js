@@ -3,7 +3,7 @@ Language: Haskell
 Author: Jeremy Hull <sourdrums@gmail.com>
 */
 
-function(hljs) {
+hljs.LANGUAGES['haskell'] = function(hljs) {
   var TYPE = {
     className: 'type',
     begin: '\\b[A-Z][\\w\']*',
@@ -87,4 +87,4 @@ function(hljs) {
       {begin: '->|<-'} // No markup, relevance booster
     ]
   };
-}
+}(hljs);

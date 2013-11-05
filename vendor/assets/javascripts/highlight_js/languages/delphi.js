@@ -2,7 +2,7 @@
 Language: Delphi
 */
 
-function(hljs) {
+hljs.LANGUAGES['delphi'] = function(hljs) {
   var DELPHI_KEYWORDS = 'and safecall cdecl then string exports library not pascal set ' +
     'virtual file in array label packed end. index while const raise for to implementation ' +
     'with except overload destructor downto finally program exit unit inherited override if ' +
@@ -74,4 +74,4 @@ function(hljs) {
       }
     ]
   };
-}
+}(hljs);

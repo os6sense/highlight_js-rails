@@ -6,7 +6,7 @@ Website: http://google.com/profiles/dan.j.allen
 */
 
 // TODO support filter tags like :javascript, support inline HTML
-function(hljs) {
+hljs.LANGUAGES['haml'] = function(hljs) {
   return {
     case_insensitive: true,
     contains: [
@@ -139,4 +139,4 @@ function(hljs) {
       }
     ]
   };
-}
+}(hljs);

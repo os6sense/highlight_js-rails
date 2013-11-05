@@ -3,7 +3,7 @@ Language: VB.NET
 Author: Poren Chiang <ren.chiang@gmail.com>
 */
 
-function(hljs) {
+hljs.LANGUAGES['vbnet'] = function(hljs) {
   return {
     case_insensitive: true,
     keywords: {
@@ -51,4 +51,4 @@ function(hljs) {
       },
     ]
   };
-}
+}(hljs);

@@ -4,7 +4,7 @@ Author: Anton Kovalyov <anton@kovalyov.net>
 Contributors: Peter Leonov <gojpeg@yandex.ru>, Vasily Polovnyov <vast@whiteants.net>, Loren Segal <lsegal@soen.ca>
 */
 
-function(hljs) {
+hljs.LANGUAGES['ruby'] = function(hljs) {
   var RUBY_IDENT_RE = '[a-zA-Z_][a-zA-Z0-9_]*(\\!|\\?)?';
   var RUBY_METHOD_RE = '[a-zA-Z_]\\w*[!?=]?|[-+~]\\@|<<|>>|=~|===?|<=>|[<>]=?|\\*\\*|[-/+%^&*~`|]|\\[\\]=?';
   var RUBY_KEYWORDS = {
@@ -192,4 +192,4 @@ function(hljs) {
     keywords: RUBY_KEYWORDS,
     contains: RUBY_DEFAULT_CONTAINS
   };
-}
+}(hljs);(hljs);

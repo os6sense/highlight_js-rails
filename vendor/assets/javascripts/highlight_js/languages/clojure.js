@@ -4,7 +4,7 @@ Description: Clojure syntax (based on lisp.js)
 Author: mfornos
 */
 
-function(hljs) {
+hljs.LANGUAGES['clojure'] = function(hljs) {
   var keywords = {
     built_in:
       // Clojure keywords
@@ -98,4 +98,4 @@ function(hljs) {
       LIST
     ]
   }
-}
+}(hljs);

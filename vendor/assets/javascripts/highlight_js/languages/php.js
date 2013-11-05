@@ -4,7 +4,7 @@ Author: Victor Karamzin <Victor.Karamzin@enterra-inc.com>
 Contributors: Evgeny Stepanischev <imbolk@gmail.com>, Ivan Sagalaev <maniac@softwaremaniacs.org>
 */
 
-function(hljs) {
+hljs.LANGUAGES['php'] = function(hljs) {
   var VARIABLE = {
     className: 'variable', begin: '\\$+[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*'
   };
@@ -104,4 +104,4 @@ function(hljs) {
       }
     ].concat(STRINGS).concat(NUMBERS)
   };
-}
+}(hljs);

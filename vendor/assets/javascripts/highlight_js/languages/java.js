@@ -3,7 +3,7 @@ Language: Java
 Author: Vsevolod Solovyov <vsevolod.solovyov@gmail.com>
 */
 
-function(hljs) {
+hljs.LANGUAGES['java'] = function(hljs) {
   return {
     keywords:
       'false synchronized int abstract float private char boolean static null if const ' +
@@ -47,4 +47,4 @@ function(hljs) {
       }
     ]
   };
-}
+}(hljs);

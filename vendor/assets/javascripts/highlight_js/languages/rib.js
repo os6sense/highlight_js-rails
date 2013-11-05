@@ -4,7 +4,7 @@ Author: Konstantin Evdokimenko <qewerty@gmail.com>
 Contributors: Shuen-Huei Guan <drake.guan@gmail.com>
 */
 
-function(hljs) {
+hljs.LANGUAGES['rib'] = function(hljs) {
   return {
     keywords:
       'ArchiveRecord AreaLightSource Atmosphere Attribute AttributeBegin AttributeEnd Basis ' +
@@ -29,4 +29,4 @@ function(hljs) {
       hljs.QUOTE_STRING_MODE
     ]
   };
-}
+}(hljs);

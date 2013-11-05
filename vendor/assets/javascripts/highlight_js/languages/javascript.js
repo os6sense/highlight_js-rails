@@ -2,7 +2,7 @@
 Language: JavaScript
 */
 
-function(hljs) {
+hljs.LANGUAGES['javascript'] = function(hljs) {
   return {
     keywords: {
       keyword:
@@ -54,4 +54,4 @@ function(hljs) {
       }
     ]
   };
-}
+}(hljs);

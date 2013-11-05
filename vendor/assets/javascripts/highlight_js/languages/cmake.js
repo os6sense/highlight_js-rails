@@ -5,7 +5,7 @@ Author: Igor Kalnitsky <igor.kalnitsky@gmail.com>
 Website: http://kalnitsky.org.ua/
 */
 
-function(hljs) {
+hljs.LANGUAGES['cmake'] = function(hljs) {
   return {
     case_insensitive: true,
     keywords: 'add_custom_command add_custom_target add_definitions add_dependencies ' +
@@ -35,4 +35,4 @@ function(hljs) {
       hljs.NUMBER_MODE
     ]
   };
-}
+}(hljs);

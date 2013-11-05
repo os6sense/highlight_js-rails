@@ -4,7 +4,7 @@
   Author: Ivan Sagalaev <maniac@softwaremaniacs.org>
 */
 
-function(hljs) {
+hljs.LANGUAGES['http'] = function(hljs) {
   return {
     illegal: '\\S',
     contains: [
@@ -36,4 +36,4 @@ function(hljs) {
       }
     ]
   };
-}
+}(hljs);

@@ -7,7 +7,7 @@ Version: 1.1
 Date: 2008-12-27
 */
 
-function(hljs) {
+hljs.LANGUAGES['apache'] = function(hljs) {
   var NUMBER = {className: 'number', begin: '[\\$%]\\d+'};
   return {
     case_insensitive: true,
@@ -114,4 +114,4 @@ function(hljs) {
       hljs.QUOTE_STRING_MODE
     ]
   };
-}
+}(hljs);

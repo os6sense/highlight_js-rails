@@ -2,7 +2,7 @@
 Language: Ini
 */
 
-function(hljs) {
+hljs.LANGUAGES['ini'] = function(hljs) {
   return {
     case_insensitive: true,
     illegal: '[^\\s]',
@@ -30,4 +30,4 @@ function(hljs) {
       }
     ]
   };
-}
+}(hljs);

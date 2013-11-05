@@ -2,7 +2,7 @@
 Language: Python
 */
 
-function(hljs) {
+hljs.LANGUAGES['python'] = function(hljs) {
   var PROMPT = {
     className: 'prompt',  begin: /^(>>>|\.\.\.) /
   }
@@ -85,4 +85,4 @@ function(hljs) {
       }
     ])
   };
-}
+}(hljs);

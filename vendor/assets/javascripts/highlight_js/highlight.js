@@ -610,4 +610,4 @@ var hljs = new function() {
         result[key] = obj[key];
     return result;
   }
-}
+}();

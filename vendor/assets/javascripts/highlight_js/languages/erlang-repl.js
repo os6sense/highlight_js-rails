@@ -3,7 +3,7 @@
  Author: Sergey Ignatov <sergey@ignatov.spb.su>
  */
 
-function(hljs) {
+hljs.LANGUAGES['erlang-repl'] = function(hljs) {
   return {
     keywords: {
       special_functions:
@@ -52,4 +52,4 @@ function(hljs) {
       }
     ]
   };
-}
+}(hljs);

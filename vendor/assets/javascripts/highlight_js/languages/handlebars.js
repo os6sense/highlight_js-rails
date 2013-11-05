@@ -5,7 +5,7 @@ Author: Robin Ward <robin.ward@gmail.com>
 Description: Matcher for Handlebars as well as EmberJS additions.
 */
 
-function(hljs) {
+hljs.LANGUAGES['handlebars'] = function(hljs) {
 
   function copy(mode, parent) {
     var result = {};
@@ -61,4 +61,4 @@ function(hljs) {
   var result = copy(hljs.LANGUAGES.xml);
   result.case_insensitive = true;
   return result;
-}
+}(hljs);

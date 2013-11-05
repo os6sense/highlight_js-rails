@@ -4,7 +4,7 @@ Author: Denis Bardadym <bardadymchik@gmail.com>
 Contributors: Eugene Nizhibitsky <nizhibitsky@ya.ru>
 */
 
-function(hljs) {
+hljs.LANGUAGES['matlab'] = function(hljs) {
 
   var COMMON_CONTAINS = [
     hljs.C_NUMBER_MODE,
@@ -78,4 +78,4 @@ function(hljs) {
       }
     ].concat(COMMON_CONTAINS)
   };
-}
+}(hljs);

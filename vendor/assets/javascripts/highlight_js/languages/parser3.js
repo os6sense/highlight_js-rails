@@ -4,7 +4,7 @@ Requires: xml.js
 Author: Oleg Volchkov <oleg@volchkov.net>
 */
 
-function(hljs) {
+hljs.LANGUAGES['parser3'] = function(hljs) {
   return {
     subLanguage: 'xml', relevance: 0,
     contains: [
@@ -47,4 +47,4 @@ function(hljs) {
       hljs.C_NUMBER_MODE
     ]
   };
-}
+}(hljs);

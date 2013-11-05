@@ -3,7 +3,7 @@
   Author: Kelley van Evert <kelleyvanevert@gmail.com>
 */
 
-function(hljs) {
+hljs.LANGUAGES['mizar'] = function(hljs) {
   return {
     keywords: [
       "environ vocabularies notations constructors definitions registrations theorems schemes requirements",
@@ -21,4 +21,4 @@ function(hljs) {
       }
     ]
   };
-}
+}(hljs);

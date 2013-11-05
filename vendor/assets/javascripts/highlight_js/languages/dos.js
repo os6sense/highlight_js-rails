@@ -3,7 +3,7 @@ Language: DOS .bat
 Author: Alexander Makarov (http://rmcreative.ru/)
 */
 
-function(hljs) {
+hljs.LANGUAGES['dos'] = function(hljs) {
   return {
     case_insensitive: true,
     keywords: {
@@ -32,4 +32,4 @@ function(hljs) {
       }
     ]
   };
-}
+}(hljs);

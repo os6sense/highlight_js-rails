@@ -4,7 +4,7 @@ Description: Unified and context diff
 Author: Vasily Polovnyov <vast@whiteants.net>
 */
 
-function(hljs) {
+hljs.LANGUAGES['diff'] = function(hljs) {
   return {
     contains: [
       {
@@ -60,4 +60,4 @@ function(hljs) {
       }
     ]
   };
-}
+}(hljs);

@@ -4,7 +4,7 @@ Author: Konstantin Evdokimenko <qewerty@gmail.com>
 Contributors: Shuen-Huei Guan <drake.guan@gmail.com>
 */
 
-function(hljs) {
+hljs.LANGUAGES['rsl'] = function(hljs) {
   return {
     keywords: {
       keyword:
@@ -41,4 +41,4 @@ function(hljs) {
       }
     ]
   };
-}
+}(hljs);

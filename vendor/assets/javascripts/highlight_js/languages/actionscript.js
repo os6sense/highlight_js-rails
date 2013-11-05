@@ -3,7 +3,7 @@ Language: ActionScript
 Author: Alexander Myadzel <myadzel@gmail.com>
 */
 
-function(hljs) {
+hljs.LANGUAGES['actionscript'] = function(hljs) {
   var IDENT_RE = '[a-zA-Z_$][a-zA-Z0-9_$]*';
   var IDENT_FUNC_RETURN_TYPE_RE = '([*]|[a-zA-Z_$][a-zA-Z0-9_$]*)';
 
@@ -80,4 +80,4 @@ function(hljs) {
       }
     ]
   };
-}
+}(hljs);

@@ -3,7 +3,7 @@ Language: F#
 Author: Jonas Follesø <jonas@follesoe.no>
 Description: F# language definition.
 */
-function(hljs) {
+hljs.LANGUAGES['fsharp'] = function(hljs) {
   return {
     keywords:
       'abstract and as assert base begin class default delegate do done ' +
@@ -53,4 +53,4 @@ function(hljs) {
       hljs.C_NUMBER_MODE
     ]
   }
-}
+}(hljs);

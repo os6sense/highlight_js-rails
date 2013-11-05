@@ -3,7 +3,7 @@ Language: Brainfuck
 Author: Evgeny Stepanischev <imbolk@gmail.com>
 */
 
-function(hljs){
+hljs.LANGUAGES['brainfuck'] = function(hljs){
   return {
     contains: [
       {
@@ -28,4 +28,4 @@ function(hljs){
       }
     ]
   };
-}
+}(hljs);

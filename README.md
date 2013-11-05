@@ -1,7 +1,11 @@
 # Highlight.js for rails 4.0
 
-** NB: Sorry, this is a work in progress, I should be finished in an
-hour or so.
+NB: Apologies to those who downloaded versions < 7.4.0.3; third times
+a charm as they say.
+
+This is my first gem and I am learning as I go along. I am reasonably
+certain this version works, however you may want to wait a day or so
+since my next job is to add some tests.
 
 This is a minor update to chloerei/highlight_js-rails which I have
 forked because :
@@ -14,7 +18,7 @@ highlight.js.
 
 ## Description
 
-Rails pipeline wraper for highlight.js http://http://highlightjs.org/
+Rails pipeline wraper for highlight.js http://highlightjs.org/
 
 ## Install
 
@@ -32,7 +36,7 @@ Then `bundle install`
 
 ## Usage
 
-application.js
+application.js or appropriate layouts .js
 
 ```javascript
 //= require highlight_js/highlight

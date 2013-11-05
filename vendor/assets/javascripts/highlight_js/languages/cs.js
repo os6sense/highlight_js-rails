@@ -3,7 +3,7 @@ Language: C#
 Author: Jason Diamond <jason@diamond.name>
 */
 
-function(hljs) {
+hljs.LANGUAGES['cs'] = function(hljs) {
   return {
     keywords:
       // Normal keywords.
@@ -48,4 +48,4 @@ function(hljs) {
       hljs.C_NUMBER_MODE
     ]
   };
-}
+}(hljs);

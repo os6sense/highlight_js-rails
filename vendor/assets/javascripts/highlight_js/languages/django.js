@@ -5,7 +5,7 @@ Author: Ivan Sagalaev <maniac@softwaremaniacs.org>
 Contributors: Ilya Baryshev <baryshev@gmail.com>
 */
 
-function(hljs) {
+hljs.LANGUAGES['django'] = function(hljs) {
 
   function allowsDjangoSyntax(mode, parent) {
     return (
@@ -86,4 +86,4 @@ function(hljs) {
   var result = copy(hljs.LANGUAGES.xml);
   result.case_insensitive = true;
   return result;
-}
+}(hljs);
