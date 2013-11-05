@@ -14,18 +14,18 @@ highlight.js.
 
 ## Description
 
-Rails pipeline wraper for highlight.js http://softwaremaniacs.org/soft/highlight/en/
+Rails pipeline wraper for highlight.js http://http://highlightjs.org/
 
 ## Install
 
 In you Gemfile
 
 ```ruby
-gem 'highlight_js-rails'
+gem 'highlight_js-rails4'
 
 # or
 
-gem 'highlight_js-rails', :git => 'git://github.com/chloerei/highlight_js-rails.git'
+gem 'highlight_js-rails4', :git => 'git://github.com/chloerei/highlight_js-rails4.git'
 ```
 
 Then `bundle install`
