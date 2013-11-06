@@ -3,12 +3,23 @@
 NB: Apologies to those who downloaded versions < 7.4.0.3; third times
 a charm as they say.
 
+## README FIRST
 This is my first gem and I am learning as I go along. I am reasonably
 certain this version works, however you may want to wait a day or so
 since my next job is to add some tests.
 
-This is a minor update to chloerei/highlight_js-rails which I have
-forked because :
+## WHAT IS THIS?
+
+Highlight.js is an EXCELLENT javascript library by Ivan Sagalaev which
+uses javascript to detect and syntax highlight "<code></code>" blocks in
+a webpage.  Find out more over at http://highlightjs.org/.
+
+Highlight_js-rails4 is a simple wrapper around the library to allow
+you to add highlight.js via a gem.
+
+## WHY?
+This is a ~~minor~~ slightly more extensive update than I first
+realised to chloerei/highlight_js-rails which I have forked because :
 
 1. I've nevered forked a repository before.
 2. it hadn't been updated in a year and was 3 versions behind
@@ -16,11 +27,11 @@ highlight.js.
 3. I've yet to create a gem. Its about time I learned.
 4. It doesn't mention compatability with rails 4.0.
 
-## Description
+## DESCRIPTION
 
 Rails pipeline wraper for highlight.js http://highlightjs.org/
 
-## Install
+## INSTALL
 
 In your Gemfile
 
@@ -34,7 +45,7 @@ gem 'highlight_js-rails4', :git => 'git://github.com/os6sense/highlight_js-rails
 
 Then `bundle install`
 
-## Usage
+## USAGE
 
 ### 1. Edit the applications javascript file
 If you want to only select a few languages you can include just
@@ -54,22 +65,30 @@ you want to be highlighted:
 hljs.initHighlightingOnLoad();
 ```
 
-ALTERNATIVELY:
+#### ALTERNATIVELY:
 The source for highlight.js itself also comes with a pack which enables
 autodetection. I have included 2 packs from highlight.js:
 
-   highlight.pack.js - this is the download pack as supplied at http://highlightjs.org/download/ and includes: Bash, C#, C++, CSS, Diff, HTML, XML, HTTP, Ini, JSON, Java, JavaScript, PHP, Perl, Python, Ruby, SQL
+  highlight.pack.js - this is the download pack as supplied at
+                       http://highlightjs.org/download/ and includes:
+                       Bash, C#, C++, CSS, Diff, HTML, XML, HTTP, Ini,
+                       JSON, Java, JavaScript, PHP, Perl, Python, Ruby, SQL
 
-  highlight.pack.all.js - this is the complete shebang and is rather large at 111K.
+  highlight.pack.all.js - this is the complete shebang and is rather large
+                          at 111K.
 
 The great thing about these is that they autodetect and hence don't
 require you to specify which language to include. To use them all you
 will need to add to the application.js file is:
+
 ```javascript
 //= require highlight_js/highlight.pack
-// CHOOSE **ONE** OF THESE REQUIRES, NOT BOTH
-//= require highlight_js/highlight.pack.all
+hljs.initHighlightingOnLoad();
+```
+OR, in the event that you want all languages:
 
+```javascript
+//= require highlight_js/highlight.pack.all
 hljs.initHighlightingOnLoad();
 ```
 ### 2. Edit applications stylesheet file
@@ -87,3 +106,14 @@ you want. e.g.
 ```css
 *= require highlight_js/github
 ```
+
+## Notes on marking up
+I've only briefly used highlight.js myself! With the "pack" type files
+auto detection works "as advertised" and any "<code></code>" block should be auto
+detected and syntax highlighting applied. In the event than a language
+isn't autodetected, the language can be specified by providing the
+language name within the class.
+
+## LICENSE
+
+
