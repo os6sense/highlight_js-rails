@@ -76,6 +76,7 @@ autodetection. I have included 2 packs from highlight.js:
   **highlight.pack.all.js** - this is the complete shebang built with the
 Python build script included in the highlight.js source. It is rather
 large at 111K and includes some languages which I hadn't even heard of!
+See classref.txt for the complete list.
 
 The great thing about these is that they autodetect and hence don't
 require you to specify which language to include. To use either of them,
