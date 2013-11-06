@@ -1,7 +1,7 @@
 # Highlight.js for rails 4.0
 
 NB: Apologies to those who downloaded versions < 7.4.0.3; third times
-a charm as they say.
+a charm as they say. This version now DOES work. 99% sure but...
 
 ## README FIRST
 This is my first gem and I am learning as I go along. I am reasonably
@@ -15,7 +15,7 @@ uses javascript to detect and syntax highlight ```<code></code>``` blocks in
 a webpage.  Find out more over at http://highlightjs.org/.
 
 Highlight_js-rails4 is a simple wrapper around the library to allow
-you to add highlight.js via a gem.
+you to add highlight.js support to rails4 via a gem.
 
 ## WHY?
 This is a ~~minor~~ slightly more extensive update than I first
@@ -68,17 +68,18 @@ hljs.initHighlightingOnLoad();
 The source for highlight.js itself also comes with a pack which enables
 autodetection. I have included 2 packs from highlight.js:
 
-  *highlight.pack.js* - this is the download pack as supplied at
+  **highlight.pack.js** - this is the download pack as supplied at
                        http://highlightjs.org/download/ and includes:
                        Bash, C#, C++, CSS, Diff, HTML, XML, HTTP, Ini,
                        JSON, Java, JavaScript, PHP, Perl, Python, Ruby, SQL
 
-  *highlight.pack.all.js* - this is the complete shebang and is rather large
-                          at 111K.
+  **highlight.pack.all.js** - this is the complete shebang built with the
+Python build script included in the highlight.js source. It is rather
+large at 111K and includes some languages which I hadn't even heard of!
 
 The great thing about these is that they autodetect and hence don't
-require you to specify which language to include. To use them all you
-will need to add to the application.js file is:
+require you to specify which language to include. To use either of them,
+all you will need to add to the application.js file is:
 
 ```javascript
 //= require highlight_js/highlight.pack
@@ -95,6 +96,14 @@ highlight.js comes with several different styles which can be applied to
 the highlighted code block. There is a very useful test where you can
 see the effects of these at: http://highlightjs.org/static/test.html
 
+The complete list of styles included is:
+
+arta, ascetic, brown_paper, dark, default, docco, far, foundation, github
+googlecode, idea, ir_black, magula, mono-blue, monokai, monokai_sublime
+obsidian, pojoaque, railscasts, rainbow, school_book, solarized_dark
+solarized_light, sunburst, tomorrow, tomorrow-night-blue, tomorrow-night-bright
+tomorrow-night, tomorrow-night-eighties, vs, xcode, zenburn
+
 In order to add a given style edit the application stylesheet file:
     app/assets/stylesheets/application.css
 
@@ -106,6 +115,8 @@ you want. e.g.
 *= require highlight_js/github
 ```
 
+This will add the github style of highlighting.
+
 ## Notes on marking up
 I've only briefly used highlight.js myself! With the "pack" type files
 auto detection works "as advertised" and any ```<code></code>``` block should be auto
@@ -114,5 +125,5 @@ isn't autodetected, the language can be specified by providing the
 language name within the class.
 
 ## LICENSE
-
-
+Please see the LICENSE. highlight_js-rails4 is little more than a repack of
+highlight.js hence it uses the same license.
