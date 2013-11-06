@@ -50,11 +50,10 @@ Then `bundle install`
 ### 1. Edit the applications javascript file
 If you want to only select a few languages you can include just
 highlight and the languages you want/need.  Edit your applications
-js file (or appropriate layouts .js file if you are using layouts):
- app/assets/javascrpt/application.js
-
-and include something like the following but specifying the languages
-you want to be highlighted:
+js file (or appropriate layouts .js file if you are using layouts)
+e.g.  "app/assets/javascrpt/application.js" and include something
+like the following but specifying the languages you want to be
+highlighted:
 
 ```javascript
 //= require highlight_js/highlight
@@ -69,12 +68,12 @@ hljs.initHighlightingOnLoad();
 The source for highlight.js itself also comes with a pack which enables
 autodetection. I have included 2 packs from highlight.js:
 
-  highlight.pack.js - this is the download pack as supplied at
+  *highlight.pack.js* - this is the download pack as supplied at
                        http://highlightjs.org/download/ and includes:
                        Bash, C#, C++, CSS, Diff, HTML, XML, HTTP, Ini,
                        JSON, Java, JavaScript, PHP, Perl, Python, Ruby, SQL
 
-  highlight.pack.all.js - this is the complete shebang and is rather large
+  *highlight.pack.all.js* - this is the complete shebang and is rather large
                           at 111K.
 
 The great thing about these is that they autodetect and hence don't
