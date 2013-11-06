@@ -11,7 +11,7 @@ since my next job is to add some tests.
 ## WHAT IS THIS?
 
 Highlight.js is an EXCELLENT javascript library by Ivan Sagalaev which
-uses javascript to detect and syntax highlight "<code></code>" blocks in
+uses javascript to detect and syntax highlight ```<code></code>``` blocks in
 a webpage.  Find out more over at http://highlightjs.org/.
 
 Highlight_js-rails4 is a simple wrapper around the library to allow
@@ -108,7 +108,7 @@ you want. e.g.
 
 ## Notes on marking up
 I've only briefly used highlight.js myself! With the "pack" type files
-auto detection works "as advertised" and any "<code></code>" block should be auto
+auto detection works "as advertised" and any ```<code></code>``` block should be auto
 detected and syntax highlighting applied. In the event than a language
 isn't autodetected, the language can be specified by providing the
 language name within the class.
